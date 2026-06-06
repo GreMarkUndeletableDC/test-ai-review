@@ -16,7 +16,9 @@ jobs:
         uses: the-pr-agent/pr-agent@main
         env:
           config.model: "deepseek/deepseek-chat"
+          config.fallback_models: ["deepseek/deepseek-chat"]
           OPENAI.KEY: ${{ secrets.OPENAI_KEY }}
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           DEEPSEEK.KEY: ${{ secrets.OPENAI_KEY }}
           DEEPSEEK_KEY: ${{ secrets.OPENAI_KEY }}
           DEEPSEEK__KEY: ${{ secrets.OPENAI_KEY }}
