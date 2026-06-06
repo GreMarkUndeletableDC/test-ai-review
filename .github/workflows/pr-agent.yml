@@ -16,4 +16,5 @@ jobs:
         uses: the-pr-agent/pr-agent@main
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          OPENAI.API_BASE: ${{ vars.AI_API_BASE }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
