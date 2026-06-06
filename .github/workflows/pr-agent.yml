@@ -20,6 +20,7 @@ on:
         required: true
 jobs:
   ai-review:
+    permissions: write-all
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
