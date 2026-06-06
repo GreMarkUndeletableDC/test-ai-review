@@ -1,0 +1,11 @@
+prompt:
+  inline_prompt_files:
+    - ./.ai-review/prompts/inline.md
+  # context_prompt_files:
+  #   - ./.ai-review/prompts/default_context.md
+  # summary_prompt_files:
+  #   - ./.ai-review/prompts/default_summary.md  # MR-specific summary prompt
+  # inline_reply_prompt_files:
+  #   - ./prompts/default_inline_reply.md  # MR-specific inline reply prompt
+  # summary_reply_prompt_files:
+  #   - ./prompts/default_summary_reply.md  # MR-specific summary reply prompt
