@@ -17,4 +17,7 @@ jobs:
         env:
           config.model: "deepseek/deepseek-chat"
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          DEEPSEEK.KEY: ${{ secrets.OPENAI_KEY }}
+          DEEPSEEK_KEY: ${{ secrets.OPENAI_KEY }}
+          DEEPSEEK__KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
