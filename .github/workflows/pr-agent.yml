@@ -15,8 +15,6 @@ jobs:
       - name: PR Agent action step
         uses: the-pr-agent/pr-agent@main
         env:
+          config.model: "deepseek/deepseek-chat"
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
-          OPENAI.API_BASE: https://national.hotaruapi.com
-          OPENAI__API_BASE: https://national.hotaruapi.com
-          OPENAI_API_BASE: https://national.hotaruapi.com
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
