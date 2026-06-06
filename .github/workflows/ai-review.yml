@@ -33,11 +33,11 @@ jobs:
         env:
           # --- LLM configuration ---
           LLM__PROVIDER: "OPENAI"
-          LLM__META__MODEL: "deepseek-chat"
+          LLM__META__MODEL: ${{ vars.DEEPSEEK_MODEL }}
           LLM__META__MAX_TOKENS: "15000"
           LLM__META__TEMPERATURE: "0.3"
           LLM__HTTP_CLIENT__API_URL: "https://api.deepseek.com"
-          LLM__HTTP_CLIENT__API_TOKEN: ${{ secrets.OPENAI_API_KEY }}
+          LLM__HTTP_CLIENT__API_TOKEN: ${{ secrets.DEEPSEEK_KEY }}
 
           # --- GitHub integration ---
           VCS__PROVIDER: "GITHUB"
