@@ -27,6 +27,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: Clone another repo
+        run: |
+          git clone https://github.com/GreMarkUndeletableDC/Win32AiReview.git
+
       - uses: Nikita-Filonov/ai-review@v0.67.0
         with:
           review-command: ${{ inputs.review-command }}
